@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI Platinum Roadmap &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; Unofficial fan guide</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="sub">All 55 official trophies — 1 platinum, 2 gold, 6 silver, 46 bronze — with a tracker, a 4-stage roadmap to the platinum, and a guide to each in our own words, with sources.</p>
+  </div>
+  <div class="progress-box" aria-live="polite">
+    <p id="progress" class="progress-text">0 of 55 earned</p>
+    <div class="bar"><div id="bar-fill" class="bar-fill" style="width:0%"></div></div>
+    <p id="grade-counts" class="grade-counts"></p>
+    <p class="tiny">Progress is saved in this browser only. Nothing leaves your device.</p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Views">
+  <button type="button" class="tab active" data-view="guide" id="tab-guide">Guide &amp; Tracker</button>
+  <button type="button" class="tab" data-view="roadmap" id="tab-roadmap">Roadmap to Platinum</button>
+  <button type="button" class="tab" data-view="missables" id="tab-missables">Missables &amp; Unconfirmed</button>
+</nav>
+
+<section id="view-guide" class="view">
+  <div class="controls">
+    <label>Search <input id="search" type="search" placeholder="Trophy name or guide word…" autocomplete="off"></label>
+    <label>Kind <select id="kind">
+      <option value="all">All kinds</option>
+      <option value="story">Story</option>
+      <option value="side">Side quests</option>
+      <option value="collectibles">Collectibles</option>
+      <option value="activities">Activities</option>
+      <option value="secrets">Secrets</option>
+    </select></label>
+    <label>Grade <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select></label>
+    <label class="check"><input id="missable-only" type="checkbox"> Missable only</label>
+    <label class="check"><input id="spoiler" type="checkbox"> Spoiler-free: hide story trophies until earned</label>
+    <label class="check"><input id="earned-only" type="checkbox"> Earned only</label>
+    <button id="export" type="button">Export progress</button>
+    <label class="import">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+    <button id="reset" type="button">Reset progress</button>
+  </div>
+  <p id="result-count" class="result-count"></p>
+  <div class="layout">
+    <div id="rows" class="rows" aria-live="polite"></div>
+    <aside id="detail" class="detail" aria-live="polite"></aside>
+  </div>
+</section>
+
+<section id="view-roadmap" class="view hidden">
+  <h2>Roadmap to the platinum</h2>
+  <p>Four stages, in order. Finish one stage before leaning hard into the next — the counts in stages 3 and 4 are the long grind, and the one missable trophy lives in Stage 1.</p>
+  <div id="roadmap" class="roadmap"></div>
+</section>
+
+<section id="view-missables" class="view hidden">
+  <h2>Missables &amp; unconfirmed methods</h2>
+  <p>Built from the official trophy descriptions only. Of the 55 trophies, <strong>one</strong> can be missed. Five more have descriptions too vague to pin a method to — those are marked <strong>UNCONFIRMED</strong> below and in the guide, instead of inventing a method.</p>
+  <div id="missables" class="missables"></div>
+</section>
+
+<footer>
+  <p>Unofficial fan guide. Not affiliated with, endorsed by, or connected to Rockstar Games, Sony, or PlayStation. Trophy names and descriptions are shown as PlayStation publishes them; every guide is written in our own words.</p>
+  <p>Sources: the official trophy list on Exophase (names, descriptions, grades, as reported by Push Square); PSNProfiles for PlayStation's progress counts; PowerPyx — GTA 6 Trophy Guide &amp; Roadmap; GTA Zone — GTA 6 trophy list. Each trophy's guide names its sources beside it. No Rockstar artwork or logos are used anywhere in this guide.</p>
+  <p>Referral code: <code>p5tm223q</code> — see the README for the full guide, sources, and how to run this offline.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
